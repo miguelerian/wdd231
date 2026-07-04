@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WDD 231 | Home | Miguel Avalos</title>
+
+    <meta name="description"
+        content="WDD 231 course home page for Miguel Avalos featuring projects, course work, and certificates.">
+
+    <meta name="author" content="Miguel Avalos">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <img src="images/epicgames-svgrepo-com.svg" alt="Site Logo" class="logo">
+
+        <span>Miguel Avalos</span>
+
+        <button id="ham-btn" class="hamburger" aria-label="Navigation Menu">
+        </button>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li class="current">
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="chamber/index.html">Chamber Project</a>
+            </li>
+
+            <li>
+                <a href="final/index.html">Final Project</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <h1>Home</h1>
+
+        <section class="about">
+            <h2>About Me</h2>
+
+            <p>
+                Hello! My name is Miguel Avalos and I am currently studying
+                Web and Computer Programming. I enjoy learning front-end
+                development, creating websites, and improving my coding skills.
+                My goal is to continue growing as a developer and build useful
+                projects that solve real problems.
+            </p>
+        </section>
+
+        <section class="photo">
+            <h2>Student Photo</h2>
+
+            <img src="images/student-photo.webp" alt="Photo of Miguel Avalos" loading="lazy">
+        </section>
+
+        <section class="certificate">
+            <h2>Web Certificate Courses</h2>
+        
+            <div class="course-buttons">
+                <button id="all">All</button>
+                <button id="cse">CSE</button>
+                <button id="wdd">WDD</button>
+            </div>
+        
+            <div id="course-container"></div>
+        
+            <p>
+                The total credits for courses listed above is
+                <span id="totalCredits"></span>
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="social">
+
+            <a href="https://www.linkedin.com/in/miguel-avalos-724349176/" target="_blank" rel="noopener noreferrer">
+
+                <img src="images/linkedin-161-svgrepo-com.svg" alt="LinkedIn">
+            </a>
+
+            <a href="https://github.com/miguelerian/wdd231" target="_blank" rel="noopener noreferrer">
+
+                <img src="images/github-142-svgrepo-com.svg" alt="GitHub">
+            </a>
+
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+
+                <img src="images/facebook-svgrepo-com.svg" alt="Facebook">
+            </a>
+
+        </div>
+
+        <p>
+            &copy;
+            <span id="currentyear"></span>
+            Miguel Avalos • Mexico
+        </p>
+
+        <p id="lastModified"></p>
+
+    </footer>
+
+</body>
+
+</html>
