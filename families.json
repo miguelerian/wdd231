@@ -1,0 +1,37 @@
+{
+    "family_name": "Avalos Priante",
+    "date": "07/06/2026",
+    "people": 5,
+    "visited": true,
+    "individual_member": [
+        {
+           "name": "Miguel Angel Avalos Velazquez",
+           "gender": "Male",
+           "birthdate": "10/10/1974"
+        },
+
+        {
+            "name": "Nancy Erendira Priante Del Angel",
+            "gender": "Female",
+            "birthdate": "10/02/1973"
+        },
+
+        {
+            "name": "Naymi Avalos Priante",
+            "gender": "Female",
+            "birthdate": "02/03/2001"
+        },
+
+        {
+            "name": "Miguel Erian Avalos Priante",
+            "gender": "Male",
+            "birthdate": "10/22/2003"
+        },
+
+        {
+            "name": "Nancy Yoselin Avalos Priante",
+            "gender": "Female",
+            "birthdate": "09/09/2010"
+        }
+    ]
+}
