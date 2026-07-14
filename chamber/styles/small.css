@@ -1,6 +1,6 @@
 :root {
     --primary: #0B3C5D;
-    --secondary: #328CC1;
+    --secondary: #1565C0;
     --accent: #D9B310;
     --background: #F5F5F5;
     --white: #FFFFFF;
@@ -203,4 +203,10 @@ footer h3 {
 
 footer p {
     margin: .3rem;
+}
+
+.site-name {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
 }
