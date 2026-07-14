@@ -1,0 +1,36 @@
+@media only screen and (min-width: 768px) {
+
+    header {
+        padding: 1rem 2rem;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        width: auto;
+        gap: 1rem;
+    }
+
+    .navigation li a {
+        padding: .7rem 1rem;
+    }
+
+    #members.grid-view {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        text-align: left;
+    }
+
+    .social {
+        justify-content: center;
+    }
+
+}

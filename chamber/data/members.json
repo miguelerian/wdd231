@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Poza Rica Inn",
+        "address": "Blvd, Av. Central Ote. Km 4.5, Anáhuac, 93270 Poza Rica de Hidalgo, Ver.",
+        "phone": "782 826 0300",
+        "website": "https://www.pozaricainn.com/",
+        "image": "hotel.webp",
+        "membership": 3,
+        "description": "A modern hotel offering comfortable accommodations for business and leisure travelers."
+    },
+    {
+        "name": "Boira Barra de Café",
+        "address": "De La Aurora 1009, Santa Elena, 93240 Poza Rica de Hidalgo, Ver.",
+        "phone": "782 134 2452",
+        "website": "https://www.cafecentral.com",
+        "image": "coffee.webp",
+        "membership": 2,
+        "description": "A cozy coffee shop serving fresh coffee, breakfast, and pastries."
+    },
+    {
+        "name": "Abarrotes Chuper Negro",
+        "address": "Centro, Av 20 de Noviembre 502, Cazones, 93230 Poza Rica de Hidalgo, Ver.",
+        "phone": "+527821606474",
+        "website": "http://www.chupernegro.com.mx/",
+        "image": "supermarket.webp",
+        "membership": 1,
+        "description": "A locally owned grocery store providing fresh produce and household essentials."
+    },
+    {
+        "name": "Farmacia Guadalajara",
+        "address": "Av 20 de Noviembre 807, Cazones, 93230 Poza Rica de Hidalgo, Ver.",
+        "phone": "+527828222299",
+        "website": "https://www.farmaciasguadalajara.com.mx/PaginaWebFragua/",
+        "image": "pharmacy.webp",
+        "membership": 2,
+        "description": "A trusted pharmacy offering medications, healthcare products, and wellness services."
+    },
+    {
+        "name": "Banco BBVA",
+        "address": "Blvd. Adolfo Ruíz Cortines, México, 93310 Poza Rica de Hidalgo, Ver.",
+        "phone": "+525552262663",
+        "website": "https://www.bbva.mx/",
+        "image": "bank.webp",
+        "membership": 3,
+        "description": "Financial services including personal banking, business loans, and investments."
+    },
+    {
+        "name": "IDOCTOR",
+        "address": "Av. Puebla 103-3, Benito Juárez, 93310 Poza Rica de Hidalgo, Ver.",
+        "phone": "782 204 2989",
+        "website": "https://idoctor.com.mx/sucursales/idoctor-poza-rica-ver/",
+        "image": "tech.webp",
+        "membership": 2,
+        "description": "Computer sales, networking services, software development, and technical support."
+    },
+    {
+        "name": "La Tradicional Brasa y Fuego",
+        "address": "Av Uno 401, Cazones, 93230 Poza Rica de Hidalgo, Ver.",
+        "phone": "+527821038383",
+        "website": "https://dailyfood.com.mx/latradicional/",
+        "image": "restaurant.webp",
+        "membership": 1,
+        "description": "Authentic Mexican cuisine featuring regional specialties and family-friendly dining."
+    }
+]
