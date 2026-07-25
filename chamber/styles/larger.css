@@ -37,3 +37,11 @@
         text-align: right;
     }
 }
+
+.info-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#spotlight-container {
+    grid-template-columns: repeat(3, 1fr);
+}

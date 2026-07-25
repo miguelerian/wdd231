@@ -1,7 +1,4 @@
-const menuButton = document.querySelector("#menu");
-const navigation = document.querySelector(".navigation");
+document.querySelector("#currentyear").textContent = new Date().getFullYear();
 
-menuButton.addEventListener("click", () => {
-    navigation.classList.toggle("open");
-    menuButton.classList.toggle("open");
-});
+document.querySelector("#lastModified").textContent =
+    `Last Modification: ${document.lastModified}`;

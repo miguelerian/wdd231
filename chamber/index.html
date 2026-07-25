@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Poza Rica Chamber of Commerce | Home</title>
+
+    <meta name="author" content="Miguel Avalos">
+    <meta name="description"
+        content="Welcome to the Poza Rica Chamber of Commerce. Discover local businesses, events, weather updates, and opportunities to grow your business.">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Poza Rica Chamber of Commerce | Home">
+    <meta property="og:description" content="Supporting businesses and strengthening the Poza Rica community.">
+    <meta property="og:image" content="https://miguelerian.github.io/wdd231/chamber/images/chamber-social.webp">
+    <meta property="og:url" content="https://miguelerian.github.io/wdd231/chamber/index.html">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlights.js" defer></script>
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+
+            <img src="images/icons8-e-commerce-50.png" alt="Poza Rica Chamber Logo" width="70" height="70">
+
+            <div>
+                <span class="site-name">Poza Rica</span>
+                <p>Chamber of Commerce</p>
+            </div>
+
+        </div>
+
+        <button id="menu" aria-label="Toggle Navigation"></button>
+
+        <nav>
+
+            <ul class="navigation">
+
+                <li><a class="active" href="index.html">Home</a></li>
+
+                <li><a href="directory.html">Directory</a></li>
+
+                <li><a href="join.html">Join</a></li>
+
+                <li><a href="discover.html">Discover</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <h1>Poza Rica Chamber of Commerce</h1>
+
+        <!-- HERO -->
+
+        <section class="hero">
+
+            <img src="images/hero.webp" alt="Downtown Poza Rica">
+
+            <a class="cta" href="join.html">
+                Join the Chamber
+            </a>
+
+        </section>
+
+        <!-- EVENTS + WEATHER -->
+
+        <div class="info-grid">
+
+            <section class="events">
+
+                <h2>Current Events</h2>
+
+                <article>
+                    <h3>Business Networking Breakfast</h3>
+                    <p>Connect with local entrepreneurs and business owners on August 15.</p>
+                </article>
+
+                <article>
+                    <h3>Entrepreneur Workshop</h3>
+                    <p>Learn strategies to grow your business on August 22.</p>
+                </article>
+
+            </section>
+
+            <section class="weather">
+
+                <h2>Current Weather</h2>
+
+                <p>
+                    Temperature:
+                    <span id="current-temp"></span>
+                </p>
+
+                <figure>
+
+                    <img id="weather-icon" src="" alt="">
+
+                    <figcaption></figcaption>
+
+                </figure>
+
+                <h3>3-Day Forecast</h3>
+
+                <ul id="forecast">
+
+                </ul>
+
+            </section>
+
+        </div>
+
+        <!-- SPOTLIGHTS -->
+
+        <section class="spotlights">
+
+            <h2>Member Spotlights</h2>
+
+            <div id="spotlight-container">
+
+                <!-- JavaScript inserts spotlight cards -->
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <section class="contact">
+
+            <h3>Poza Rica Chamber of Commerce</h3>
+
+            <p>123 Main Street</p>
+
+            <p>Poza Rica, Veracruz, Mexico</p>
+
+            <p>info@pozaricachamber.org</p>
+
+            <p>+52 (782) 123-4567</p>
+
+        </section>
+
+        <section class="social">
+
+            <h3>Social Media</h3>
+
+            <a href="#">
+                <img src="images/facebook-svgrepo-com.svg" alt="Facebook">
+            </a>
+
+            <a href="#">
+                <img src="images/instagram-svgrepo-com.svg" alt="Instagram">
+            </a>
+
+            <a href="#">
+                <img src="images/linkedin-161-svgrepo-com.svg" alt="LinkedIn">
+            </a>
+
+        </section>
+
+        <section class="project">
+
+            <h3>Project Information</h3>
+
+            <p><strong>Miguel Avalos</strong></p>
+
+            <p>WDD 231 Chamber Project</p>
+
+            <p>&copy; <span id="currentyear"></span> Poza Rica Chamber of Commerce</p>
+
+            <p id="lastModified"></p>
+
+        </section>
+
+    </footer>
+
+</body>
+
+</html>
