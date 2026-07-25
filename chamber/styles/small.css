@@ -289,3 +289,8 @@ footer h3 {
 
     text-align: center;
 }
+
+.visually-hidden {
+    position: absolute;
+    left: -9999px;
+}
