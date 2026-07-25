@@ -22,6 +22,14 @@
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     }
 
+    .info-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #spotlight-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
     footer {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -36,12 +44,4 @@
     .project {
         text-align: right;
     }
-}
-
-.info-grid {
-    grid-template-columns: repeat(2, 1fr);
-}
-
-#spotlight-container {
-    grid-template-columns: repeat(3, 1fr);
 }

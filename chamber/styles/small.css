@@ -115,9 +115,13 @@ main h1 {
 
 #members>h2,
 .social>h3,
-.project>h3 {
-    display: none;
+.project>h3,
+.visually-hidden {
+    position: absolute;
+    left: -9999px;
 }
+
+/* ---------- DIRECTORY ---------- */
 
 .view-buttons {
     text-align: center;
@@ -194,6 +198,133 @@ main h1 {
     text-align: left;
 }
 
+/* ---------- HERO ---------- */
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.cta {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+
+    background: var(--accent);
+    color: var(--text);
+
+    padding: 1rem 1.5rem;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    border-radius: 6px;
+}
+
+.cta:hover {
+    background: var(--secondary);
+    color: var(--white);
+}
+
+/* ---------- EVENTS & WEATHER ---------- */
+
+.info-grid {
+    display: grid;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.info-grid section {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.info-grid h2 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.events article {
+    margin-bottom: 1rem;
+}
+
+.weather figure {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.weather img {
+    width: 80px;
+    height: auto;
+}
+
+#forecast {
+    list-style: none;
+    padding: 0;
+}
+
+#forecast li {
+    margin: .5rem 0;
+}
+
+/* ---------- SPOTLIGHTS ---------- */
+
+.spotlights {
+    margin-top: 2rem;
+}
+
+.spotlights h2 {
+    color: var(--primary);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#spotlight-container {
+    display: grid;
+    gap: 1rem;
+}
+
+#spotlight-container section {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+}
+
+#spotlight-container img {
+    width: 100%;
+    max-width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+#spotlight-container h3 {
+    color: var(--primary);
+    margin: .8rem 0;
+}
+
+#spotlight-container p {
+    margin: .4rem 0;
+}
+
+#spotlight-container a {
+    color: var(--secondary);
+    text-decoration: none;
+}
+
+#spotlight-container a:hover {
+    text-decoration: underline;
+}
+
 /* ---------- FOOTER ---------- */
 
 footer {
@@ -214,7 +345,6 @@ footer p {
 
 footer h3 {
     margin-bottom: .5rem;
-    color: var(--white);
 }
 
 .social {
@@ -226,71 +356,4 @@ footer h3 {
 .social img {
     width: 40px;
     height: auto;
-}
-
-.hero {
-    position: relative;
-}
-
-.hero img {
-    width: 100%;
-    display: block;
-}
-
-.cta {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-
-    background: var(--accent);
-    color: black;
-
-    padding: 1rem 1.5rem;
-
-    text-decoration: none;
-
-    font-weight: bold;
-
-    border-radius: 6px;
-}
-
-.info-grid {
-    display: grid;
-    gap: 1rem;
-
-    margin: 2rem 0;
-}
-
-.info-grid section {
-    background: white;
-
-    padding: 1rem;
-
-    border-radius: 10px;
-
-    border: 1px solid var(--border);
-}
-
-.spotlights {
-    margin-top: 2rem;
-}
-
-#spotlight-container {
-    display: grid;
-    gap: 1rem;
-}
-
-#spotlight-container section {
-    background: white;
-
-    padding: 1rem;
-
-    border-radius: 10px;
-
-    text-align: center;
-}
-
-.visually-hidden {
-    position: absolute;
-    left: -9999px;
 }
