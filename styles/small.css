@@ -155,6 +155,7 @@ section p {
     background-color: var(--primary);
     color: var(--white);
     cursor: pointer;
+    transition: background-color .3s ease;
 }
 
 .course-buttons button:hover,
@@ -178,6 +179,13 @@ section p {
     min-width: 150px;
     text-align: center;
     font-weight: bold;
+    cursor: pointer;
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, .25);
 }
 
 .completed {
@@ -216,4 +224,80 @@ footer {
 
 footer p {
     margin: .5rem 0;
+}
+
+/* ---------- MODAL ---------- */
+
+dialog {
+    width: 90%;
+    max-width: 650px;
+    padding: 0;
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: var(--white);
+    color: var(--text);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .35);
+    position: relative;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, .6);
+}
+
+/* Blue header */
+
+dialog h2 {
+    background-color: var(--primary);
+    color: var(--white);
+    text-align: center;
+    margin: 0;
+    padding: 1rem;
+    font-size: 1.8rem;
+}
+
+/* Course title */
+
+dialog h3 {
+    margin: 1.5rem 2rem .75rem;
+    color: var(--text);
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+/* Content */
+
+dialog p {
+    margin: 0 2rem 1rem;
+    padding: 0;
+    line-height: 1.7;
+}
+
+dialog strong {
+    color: var(--primary);
+}
+
+/* Close button */
+
+dialog button {
+    position: absolute;
+    top: .8rem;
+    right: 1rem;
+
+    width: 42px;
+    height: 42px;
+
+    border: 2px solid #d9d9d9;
+    background: var(--white);
+
+    color: crimson;
+    font-size: 1.3rem;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: background-color .2s ease;
+}
+
+dialog button:hover {
+    background-color: #f2f2f2;
 }
