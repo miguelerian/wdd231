@@ -1,62 +1,70 @@
-// Set timestamp when the page loads
-const timestamp = document.querySelector("#timestamp");
+// Set timestamp
+const timestampField = document.querySelector("#timestamp");
 
-if (timestamp) {
-    timestamp.value = new Date().toISOString();
+if (timestampField) {
+    timestampField.value = new Date().toISOString();
 }
 
-// ---------- NP Membership ----------
-const npModal = document.querySelector("#npModal");
-const npOpen = document.querySelector("#np-open");
-const npClose = document.querySelector("#np-close");
+// Modal buttons
 
-npOpen.addEventListener("click", (event) => {
-    event.preventDefault();
+const npModal = document.querySelector("#npModal");
+const bronzeModal = document.querySelector("#bronzeModal");
+const silverModal = document.querySelector("#silverModal");
+const goldModal = document.querySelector("#goldModal");
+
+// Open buttons
+
+document.querySelector("#np-open").addEventListener("click", (e) => {
+    e.preventDefault();
     npModal.showModal();
 });
 
-npClose.addEventListener("click", () => {
-    npModal.close();
-});
-
-// ---------- Bronze Membership ----------
-const bronzeModal = document.querySelector("#bronzeModal");
-const bronzeOpen = document.querySelector("#bronze-open");
-const bronzeClose = document.querySelector("#bronze-close");
-
-bronzeOpen.addEventListener("click", (event) => {
-    event.preventDefault();
+document.querySelector("#bronze-open").addEventListener("click", (e) => {
+    e.preventDefault();
     bronzeModal.showModal();
 });
 
-bronzeClose.addEventListener("click", () => {
-    bronzeModal.close();
-});
-
-// ---------- Silver Membership ----------
-const silverModal = document.querySelector("#silverModal");
-const silverOpen = document.querySelector("#silver-open");
-const silverClose = document.querySelector("#silver-close");
-
-silverOpen.addEventListener("click", (event) => {
-    event.preventDefault();
+document.querySelector("#silver-open").addEventListener("click", (e) => {
+    e.preventDefault();
     silverModal.showModal();
 });
 
-silverClose.addEventListener("click", () => {
-    silverModal.close();
-});
-
-// ---------- Gold Membership ----------
-const goldModal = document.querySelector("#goldModal");
-const goldOpen = document.querySelector("#gold-open");
-const goldClose = document.querySelector("#gold-close");
-
-goldOpen.addEventListener("click", (event) => {
-    event.preventDefault();
+document.querySelector("#gold-open").addEventListener("click", (e) => {
+    e.preventDefault();
     goldModal.showModal();
 });
 
-goldClose.addEventListener("click", () => {
+// Close buttons
+
+document.querySelector("#np-close").addEventListener("click", () => {
+    npModal.close();
+});
+
+document.querySelector("#bronze-close").addEventListener("click", () => {
+    bronzeModal.close();
+});
+
+document.querySelector("#silver-close").addEventListener("click", () => {
+    silverModal.close();
+});
+
+document.querySelector("#gold-close").addEventListener("click", () => {
     goldModal.close();
+});
+
+// Close when clicking outside
+
+[npModal, bronzeModal, silverModal, goldModal].forEach(modal => {
+    modal.addEventListener("click", (event) => {
+        const rect = modal.getBoundingClientRect();
+
+        if (
+            event.clientX < rect.left ||
+            event.clientX > rect.right ||
+            event.clientY < rect.top ||
+            event.clientY > rect.bottom
+        ) {
+            modal.close();
+        }
+    });
 });
