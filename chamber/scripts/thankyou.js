@@ -1,23 +1,48 @@
 const params = new URLSearchParams(window.location.search);
 
-document.querySelector("#firstName").textContent =
-    params.get("firstName") || "";
 
-document.querySelector("#lastName").textContent =
-    params.get("lastName") || "";
 
-document.querySelector("#email").textContent =
-    params.get("email") || "";
+const fields = [
+    "firstName",
+    "lastName",
+    "email",
+    "phone",
+    "organization"
+];
 
-document.querySelector("#phone").textContent =
-    params.get("phone") || "";
 
-document.querySelector("#organization").textContent =
-    params.get("organization") || "";
+
+fields.forEach(field => {
+
+
+    const element = document.querySelector(`#${field}`);
+
+
+    if (element) {
+
+        element.textContent =
+            params.get(field) || "";
+
+    }
+
+
+});
+
+
+
+
+
+const timestampElement = document.querySelector("#timestamp");
 
 const timestamp = params.get("timestamp");
 
-if (timestamp) {
-    document.querySelector("#timestamp").textContent =
+
+
+if (timestampElement && timestamp) {
+
+
+    timestampElement.textContent =
         new Date(timestamp).toLocaleString();
+
+
 }

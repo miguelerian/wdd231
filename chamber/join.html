@@ -2,299 +2,499 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
     <title>Poza Rica Chamber of Commerce | Join</title>
 
+
     <meta name="author" content="Miguel Avalos">
+
     <meta name="description"
         content="Join the Poza Rica Chamber of Commerce and become part of our growing business community.">
 
+
     <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
 
+
     <meta property="og:title" content="Poza Rica Chamber of Commerce | Join">
+
     <meta property="og:description" content="Become a member of the Poza Rica Chamber of Commerce.">
+
     <meta property="og:image" content="https://miguelerian.github.io/wdd231/chamber/images/chamber-social.webp">
+
     <meta property="og:url" content="https://miguelerian.github.io/wdd231/chamber/join.html">
+
     <meta property="og:type" content="website">
 
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
+
+
     <link rel="stylesheet" href="styles/normalize.css">
+
     <link rel="stylesheet" href="styles/small.css">
+
     <link rel="stylesheet" href="styles/larger.css">
 
+
     <script src="scripts/navigation.js" defer></script>
+
     <script src="scripts/date.js" defer></script>
+
     <script src="scripts/join.js" defer></script>
+
 
 </head>
 
+
+
 <body>
+
+
 
     <header>
 
+
         <div class="logo">
+
+
             <img src="images/icons8-e-commerce-50.png" alt="Poza Rica Chamber Logo" width="70" height="70">
 
+
             <div>
+
                 <span class="site-name">Poza Rica</span>
+
                 <p>Chamber of Commerce</p>
+
             </div>
+
+
         </div>
+
+
 
         <button id="menu" aria-label="Toggle Navigation"></button>
 
+
+
         <nav>
+
             <ul class="navigation">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="directory.html">Directory</a></li>
-                <li><a class="active" href="join.html">Join</a></li>
-                <li><a href="discover.html">Discover</a></li>
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="directory.html">Directory</a>
+                </li>
+
+                <li>
+                    <a class="active" href="join.html">Join</a>
+                </li>
+
+                <li>
+                    <a href="discover.html">Discover</a>
+                </li>
+
             </ul>
+
         </nav>
+
 
     </header>
 
+
+
+
+
     <main>
+
 
         <h1>Join the Chamber</h1>
 
+
+
         <div class="join-layout">
 
-            <section class="join-form">
+
+
+            <section class="join-form card">
+
 
                 <form method="get" action="thankyou.html">
 
+
+
                     <label>
                         First Name
+
                         <input type="text" name="firstName" title="Enter your first name" autocomplete="given-name"
                             required>
+
                     </label>
+
+
+
 
                     <label>
                         Last Name
+
                         <input type="text" name="lastName" title="Enter your last name" autocomplete="family-name"
                             required>
+
                     </label>
+
+
+
 
                     <label>
                         Organizational Title
+
                         <input type="text" name="organizationTitle" title="Enter your organizational title"
                             autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}">
+
                     </label>
+
+
+
 
                     <label>
                         Email Address
+
                         <input type="email" name="email" title="Enter your email address" autocomplete="email"
                             placeholder="example@email.com" required>
+
                     </label>
+
+
+
 
                     <label>
                         Mobile Phone
+
                         <input type="tel" name="phone" title="Enter your mobile phone number" autocomplete="tel"
                             required>
+
                     </label>
+
+
+
 
                     <label>
                         Organization Name
+
                         <input type="text" name="organization" title="Enter your organization name"
                             autocomplete="organization" required>
+
                     </label>
 
+
+
+
                     <label>
+
                         Membership Level
+
 
                         <select name="membership" title="Choose a membership level">
 
-                            <option value="np">NP Membership</option>
-                            <option value="bronze">Bronze Membership</option>
-                            <option value="silver">Silver Membership</option>
-                            <option value="gold">Gold Membership</option>
+
+                            <option value="np">
+                                NP Membership
+                            </option>
+
+
+                            <option value="bronze">
+                                Bronze Membership
+                            </option>
+
+
+                            <option value="silver">
+                                Silver Membership
+                            </option>
+
+
+                            <option value="gold">
+                                Gold Membership
+                            </option>
+
 
                         </select>
 
+
                     </label>
+
+
+
 
                     <label>
 
                         Business Description
 
+
                         <textarea name="description" title="Describe your organization" rows="6"></textarea>
+
 
                     </label>
 
+
+
+
                     <input type="hidden" id="timestamp" name="timestamp">
 
-                    <input type="submit" value="Submit Application">
+
+
+                    <input class="button" type="submit" value="Submit Application">
+
 
                 </form>
 
+
             </section>
+
+
+
+
+
 
             <section class="membership-cards">
-            
-                <article class="membership-card">
-                    <h2>NP Membership</h2>
-            
-                    <p>For nonprofit organizations. No membership fee.</p>
-            
-                    <a href="#" id="np-open">Learn More</a>
-                </article>
-            
-                <article class="membership-card">
-                    <h2>Bronze Membership</h2>
-            
-                    <p>Great for small businesses starting to grow.</p>
-            
-                    <a href="#" id="bronze-open">Learn More</a>
-                </article>
-            
-                <article class="membership-card">
-                    <h2>Silver Membership</h2>
-            
-                    <p>More exposure and additional member benefits.</p>
-            
-                    <a href="#" id="silver-open">Learn More</a>
-                </article>
-            
-                <article class="membership-card">
-                    <h2>Gold Membership</h2>
-            
-                    <p>Maximum visibility and premium benefits.</p>
-            
-                    <a href="#" id="gold-open">Learn More</a>
-                </article>
-            
-            </section>
-            
-            </div>
-            
-            <!-- NP Membership Modal -->
-            
-            <dialog id="npModal">
-            
-                <h2>NP Membership</h2>
-            
-                <p>
-                    NP Membership is available for nonprofit organizations at no cost.
-                    Members receive networking opportunities, chamber communications,
-                    and access to community events.
-                </p>
-            
-                <button id="np-close">
-                    Close
-                </button>
-            
-            </dialog>
-            
-            <!-- Bronze Membership Modal -->
-            
-            <dialog id="bronzeModal">
-            
-                <h2>Bronze Membership</h2>
-            
-                <p>
-                    Bronze members receive a business directory listing,
-                    networking opportunities, and invitations to chamber events.
-                </p>
-            
-                <button id="bronze-close">
-                    Close
-                </button>
-            
-            </dialog>
-            
-            <!-- Silver Membership Modal -->
-            
-            <dialog id="silverModal">
-            
-                <h2>Silver Membership</h2>
-            
-                <p>
-                    Silver members receive all Bronze benefits plus event discounts,
-                    training opportunities, and additional business promotion.
-                </p>
-            
-                <button id="silver-close">
-                    Close
-                </button>
-            
-            </dialog>
-            
-            <!-- Gold Membership Modal -->
-            
-            <dialog id="goldModal">
-            
-                <h2>Gold Membership</h2>
-            
-                <p>
-                    Gold members receive all Silver benefits plus homepage spotlight
-                    advertising, premium marketing opportunities, and VIP event access.
-                </p>
-            
-                <button id="gold-close">
-                    Close
-                </button>
-            
-            </dialog>
 
-            </main>
-            
-            <footer>
-            
-                <section class="contact">
-            
-                    <h3>Poza Rica Chamber of Commerce</h3>
-            
-                    <p>123 Main Street</p>
-            
-                    <p>Poza Rica, Veracruz, Mexico</p>
-            
-                    <p>info@pozaricachamber.org</p>
-            
-                    <p>+52 (782) 123-4567</p>
-            
-                </section>
-            
-                <section class="social">
-            
-                    <h3>Social Media</h3>
-            
-                    <a href="#">
-                        <img src="images/facebook-svgrepo-com.svg" alt="Facebook">
+
+                <article class="membership-card card">
+
+                    <h2>NP Membership</h2>
+
+                    <p>
+                        For nonprofit organizations. No membership fee.
+                    </p>
+
+                    <a class="text-link" href="#" id="np-open">
+                        Learn More
                     </a>
-            
-                    <a href="#">
-                        <img src="images/instagram-svgrepo-com.svg" alt="Instagram">
+
+                </article>
+
+
+
+
+                <article class="membership-card card">
+
+                    <h2>Bronze Membership</h2>
+
+                    <p>
+                        Great for small businesses starting to grow.
+                    </p>
+
+                    <a class="text-link" href="#" id="bronze-open">
+                        Learn More
                     </a>
-            
-                    <a href="#">
-                        <img src="images/linkedin-161-svgrepo-com.svg" alt="LinkedIn">
+
+                </article>
+
+
+
+
+                <article class="membership-card card">
+
+                    <h2>Silver Membership</h2>
+
+                    <p>
+                        More exposure and additional member benefits.
+                    </p>
+
+                    <a class="text-link" href="#" id="silver-open">
+                        Learn More
                     </a>
-            
-                </section>
-            
-                <section class="project">
-            
-                    <h3>Project Information</h3>
-            
-                    <p><strong>Miguel Avalos</strong></p>
-            
-                    <p>WDD 231 Chamber Project</p>
-            
-                    <p>&copy; <span id="currentyear"></span> Poza Rica Chamber of Commerce</p>
-            
-                    <p id="lastModified"></p>
-            
-                </section>
-            
-            </footer>
-            
-            </body>
-            
-            </html>
+
+                </article>
+
+
+
+
+                <article class="membership-card card">
+
+                    <h2>Gold Membership</h2>
+
+                    <p>
+                        Maximum visibility and premium benefits.
+                    </p>
+
+                    <a class="text-link" href="#" id="gold-open">
+                        Learn More
+                    </a>
+
+                </article>
+
+
+            </section>
+
+
+
+        </div>
+
+
+
+
+
+        <!-- MODALS -->
+
+
+        <dialog id="npModal">
+
+            <h2>NP Membership</h2>
+
+            <p>
+                NP Membership is available for nonprofit organizations at no cost.
+                Members receive networking opportunities, chamber communications,
+                and access to community events.
+            </p>
+
+            <button class="button" id="np-close">
+                Close
+            </button>
+
+        </dialog>
+
+
+
+
+        <dialog id="bronzeModal">
+
+            <h2>Bronze Membership</h2>
+
+            <p>
+                Bronze members receive a business directory listing,
+                networking opportunities, and invitations to chamber events.
+            </p>
+
+            <button class="button" id="bronze-close">
+                Close
+            </button>
+
+        </dialog>
+
+
+
+
+        <dialog id="silverModal">
+
+            <h2>Silver Membership</h2>
+
+            <p>
+                Silver members receive all Bronze benefits plus event discounts,
+                training opportunities, and additional business promotion.
+            </p>
+
+            <button class="button" id="silver-close">
+                Close
+            </button>
+
+        </dialog>
+
+
+
+
+        <dialog id="goldModal">
+
+            <h2>Gold Membership</h2>
+
+            <p>
+                Gold members receive all Silver benefits plus homepage spotlight
+                advertising, premium marketing opportunities, and VIP event access.
+            </p>
+
+            <button class="button" id="gold-close">
+                Close
+            </button>
+
+        </dialog>
+
+
+
+    </main>
+
+
+
+
+
+    <footer>
+
+        <section class="contact">
+
+            <h3>Poza Rica Chamber of Commerce</h3>
+
+            <p>123 Main Street</p>
+
+            <p>Poza Rica, Veracruz, Mexico</p>
+
+            <p>info@pozaricachamber.org</p>
+
+            <p>+52 (782) 123-4567</p>
+
+        </section>
+
+
+
+        <section class="social">
+
+            <h3>Social Media</h3>
+
+
+            <a href="#">
+                <img src="images/facebook-svgrepo-com.svg" alt="Facebook">
+            </a>
+
+
+            <a href="#">
+                <img src="images/instagram-svgrepo-com.svg" alt="Instagram">
+            </a>
+
+
+            <a href="#">
+                <img src="images/linkedin-161-svgrepo-com.svg" alt="LinkedIn">
+            </a>
+
+
+        </section>
+
+
+
+
+        <section class="project">
+
+            <h3>Project Information</h3>
+
+            <p><strong>Miguel Avalos</strong></p>
+
+            <p>WDD 231 Chamber Project</p>
+
+            <p>
+                &copy;
+                <span id="currentyear"></span>
+                Poza Rica Chamber of Commerce
+            </p>
+
+            <p id="lastModified"></p>
+
+
+        </section>
+
+
+    </footer>
+
+
+
+</body>
+
+</html>

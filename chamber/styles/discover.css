@@ -1,87 +1,54 @@
-/* ---------- VISITOR MESSAGE ---------- */
+/* VISITOR MESSAGE */
 
 #visit-message {
+
     background: var(--accent);
+
     color: var(--text);
+
     padding: 1rem;
+
     margin: 1rem 0 2rem;
+
     border-radius: 10px;
+
     text-align: center;
+
     font-weight: 700;
+
 }
 
 
-/* ---------- DISCOVER GRID ---------- */
+
+
+
+/* DISCOVER GRID */
 
 #discover-grid {
+
     display: grid;
+
     gap: 1.5rem;
 
-    grid-template-areas:
-        "one"
-        "two"
-        "three"
-        "four"
-        "five"
-        "six"
-        "seven"
-        "eight";
-}
 
-
-/* ---------- GRID AREAS ---------- */
-
-#discover-grid section:nth-child(1) {
-    grid-area: one;
-}
-
-#discover-grid section:nth-child(2) {
-    grid-area: two;
-}
-
-#discover-grid section:nth-child(3) {
-    grid-area: three;
-}
-
-#discover-grid section:nth-child(4) {
-    grid-area: four;
-}
-
-#discover-grid section:nth-child(5) {
-    grid-area: five;
-}
-
-#discover-grid section:nth-child(6) {
-    grid-area: six;
-}
-
-#discover-grid section:nth-child(7) {
-    grid-area: seven;
-}
-
-#discover-grid section:nth-child(8) {
-    grid-area: eight;
-}
-
-
-/* ---------- CARD ---------- */
-
-#discover-grid section {
-
-    background: var(--white);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 1rem;
+    grid-template-columns: 1fr;
 
 }
 
+
+
+
+
+/* DISCOVER CONTENT */
 
 #discover-grid h2 {
 
     color: var(--primary);
+
     margin-bottom: 1rem;
 
 }
+
 
 
 #discover-grid figure {
@@ -91,92 +58,76 @@
 }
 
 
+
 #discover-grid img {
 
     width: 100%;
+
     height: auto;
-    border-radius: 8px;
+
     display: block;
 
+    border-radius: 8px;
+
 }
+
 
 
 #discover-grid address {
 
     font-style: normal;
+
     font-weight: bold;
+
     margin: .75rem 0;
 
 }
 
 
+
 #discover-grid p {
 
     line-height: 1.5;
+
     margin-bottom: 1rem;
 
 }
 
 
-#discover-grid button {
-
-    background: var(--primary);
-    color: var(--white);
-    border: none;
-    padding: .8rem 1.3rem;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background .3s;
-
-}
 
 
-#discover-grid button:hover {
+/* TABLET */
 
-    background: var(--secondary);
+@media (min-width:641px) {
 
-}
-
-
-/* ---------- MEDIUM ---------- */
-
-@media (min-width: 641px) {
 
     #discover-grid {
 
-        grid-template-columns: repeat(2, 1fr);
-
-        grid-template-areas:
-
-            "one two"
-            "three four"
-            "five six"
-            "seven eight";
-
-    }
-
-}
-
-
-/* ---------- LARGE ---------- */
-
-@media (min-width: 1025px) {
-
-    #discover-grid {
-
-        grid-template-columns: repeat(3, 1fr);
-
-        grid-template-areas:
-
-            "one one two"
-            "three four two"
-            "five six seven"
-            "eight eight seven";
+        grid-template-columns:
+            repeat(2, 1fr);
 
     }
 
 
-    /* Hover effect only on desktop */
+}
+
+
+
+
+
+/* DESKTOP */
+
+@media (min-width:1025px) {
+
+
+    #discover-grid {
+
+        grid-template-columns:
+            repeat(3, 1fr);
+
+    }
+
+
 
     #discover-grid img {
 
@@ -188,14 +139,17 @@
     }
 
 
+
     #discover-grid img:hover {
 
         transform: scale(1.05);
 
         filter: brightness(1.08);
 
-        box-shadow: 0 8px 18px rgba(0, 0, 0, .3);
+        box-shadow:
+            0 8px 18px var(--shadow);
 
     }
+
 
 }

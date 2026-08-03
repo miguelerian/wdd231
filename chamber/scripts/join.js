@@ -1,70 +1,88 @@
-// Set timestamp
+// ---------- TIMESTAMP ----------
+
 const timestampField = document.querySelector("#timestamp");
 
 if (timestampField) {
+
     timestampField.value = new Date().toISOString();
+
 }
 
-// Modal buttons
 
-const npModal = document.querySelector("#npModal");
-const bronzeModal = document.querySelector("#bronzeModal");
-const silverModal = document.querySelector("#silverModal");
-const goldModal = document.querySelector("#goldModal");
 
-// Open buttons
+// ---------- MODALS ----------
 
-document.querySelector("#np-open").addEventListener("click", (e) => {
-    e.preventDefault();
-    npModal.showModal();
-});
+const modalNames = [
+    "np",
+    "bronze",
+    "silver",
+    "gold"
+];
 
-document.querySelector("#bronze-open").addEventListener("click", (e) => {
-    e.preventDefault();
-    bronzeModal.showModal();
-});
 
-document.querySelector("#silver-open").addEventListener("click", (e) => {
-    e.preventDefault();
-    silverModal.showModal();
-});
 
-document.querySelector("#gold-open").addEventListener("click", (e) => {
-    e.preventDefault();
-    goldModal.showModal();
-});
+modalNames.forEach(name => {
 
-// Close buttons
 
-document.querySelector("#np-close").addEventListener("click", () => {
-    npModal.close();
-});
+    const modal = document.querySelector(`#${name}Modal`);
 
-document.querySelector("#bronze-close").addEventListener("click", () => {
-    bronzeModal.close();
-});
+    const openButton = document.querySelector(`#${name}-open`);
 
-document.querySelector("#silver-close").addEventListener("click", () => {
-    silverModal.close();
-});
+    const closeButton = document.querySelector(`#${name}-close`);
 
-document.querySelector("#gold-close").addEventListener("click", () => {
-    goldModal.close();
-});
 
-// Close when clicking outside
 
-[npModal, bronzeModal, silverModal, goldModal].forEach(modal => {
-    modal.addEventListener("click", (event) => {
-        const rect = modal.getBoundingClientRect();
+    if (!modal || !openButton || !closeButton) return;
 
-        if (
-            event.clientX < rect.left ||
-            event.clientX > rect.right ||
-            event.clientY < rect.top ||
-            event.clientY > rect.bottom
-        ) {
-            modal.close();
-        }
+
+
+    // Open modal
+
+    openButton.addEventListener("click", (event) => {
+
+        event.preventDefault();
+
+        modal.showModal();
+
     });
+
+
+
+    // Close modal
+
+    closeButton.addEventListener("click", () => {
+
+        modal.close();
+
+    });
+
+
+
+    // Close clicking outside
+
+    modal.addEventListener("click", (event) => {
+
+
+        const box = modal.getBoundingClientRect();
+
+
+
+        const inside =
+            event.clientX >= box.left &&
+            event.clientX <= box.right &&
+            event.clientY >= box.top &&
+            event.clientY <= box.bottom;
+
+
+
+        if (!inside) {
+
+            modal.close();
+
+        }
+
+
+    });
+
+
 });
