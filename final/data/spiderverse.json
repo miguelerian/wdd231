@@ -1,0 +1,124 @@
+{
+    "characters": [
+        {
+            "name": "Peter Parker",
+            "type": "Hero",
+            "universe": "Earth-616",
+            "powers": "Spider-Sense, wall crawling, super strength",
+            "firstAppearance": "Amazing Fantasy #15",
+            "image": "peter.webp"
+        },
+        {
+            "name": "Miles Morales",
+            "type": "Hero",
+            "universe": "Earth-1610",
+            "powers": "Venom Blast, camouflage, spider-sense",
+            "firstAppearance": "Ultimate Fallout #4",
+            "image": "miles.webp"
+        },
+        {
+            "name": "Gwen Stacy",
+            "type": "Hero",
+            "universe": "Earth-65",
+            "powers": "Spider-Sense, wall crawling, agility",
+            "firstAppearance": "Edge of Spider-Verse #2",
+            "image": "gwen.webp"
+        },
+        {
+            "name": "Spider-Man 2099",
+            "type": "Hero",
+            "universe": "Earth-928",
+            "powers": "Enhanced strength, claws, healing",
+            "firstAppearance": "Amazing Spider-Man #365",
+            "image": "miguel.webp"
+        },
+        {
+            "name": "Spider-Man Noir",
+            "type": "Hero",
+            "universe": "Earth-90214",
+            "powers": "Enhanced agility, strength, spider-sense",
+            "firstAppearance": "Spider-Man Noir #1",
+            "image": "noir.webp"
+        },
+        {
+            "name": "Spider-Ham",
+            "type": "Hero",
+            "universe": "Earth-8311",
+            "powers": "Cartoon physics, elasticity, spider abilities",
+            "firstAppearance": "Marvel Tails Starring Peter Porker #1",
+            "image": "ham.webp"
+        },
+        {
+            "name": "Peni Parker",
+            "type": "Hero",
+            "universe": "Earth-14512",
+            "powers": "SP//dr suit, piloting, technology",
+            "firstAppearance": "Edge of Spider-Verse #5",
+            "image": "peni.webp"
+        },
+        {
+            "name": "Ben Reilly",
+            "type": "Hero",
+            "universe": "Earth-616",
+            "powers": "Spider-Sense, wall crawling, super strength",
+            "firstAppearance": "Amazing Spider-Man #149",
+            "image": "ben.webp"
+        },
+        {
+            "name": "Spider-Woman",
+            "type": "Hero",
+            "universe": "Earth-616",
+            "powers": "Super strength, venom blasts, flight",
+            "firstAppearance": "Marvel Spotlight #32",
+            "image": "jessica.webp"
+        },
+        {
+            "name": "Scarlet Spider",
+            "type": "Hero",
+            "universe": "Earth-616",
+            "powers": "Spider-Sense, super strength, agility",
+            "firstAppearance": "Web of Spider-Man #118",
+            "image": "scarlet.webp"
+        },
+        {
+            "name": "Green Goblin",
+            "type": "Villain",
+            "universe": "Earth-616",
+            "powers": "Enhanced strength, agility, advanced technology",
+            "firstAppearance": "Amazing Spider-Man #14",
+            "image": "goblin.webp"
+        },
+        {
+            "name": "Doctor Octopus",
+            "type": "Villain",
+            "universe": "Earth-616",
+            "powers": "Mechanical arms, intelligence, enhanced strength",
+            "firstAppearance": "Amazing Spider-Man #3",
+            "image": "octopus.webp"
+        },
+        {
+            "name": "Venom",
+            "type": "Villain",
+            "universe": "Earth-616",
+            "powers": "Symbiote abilities, strength, camouflage",
+            "firstAppearance": "Amazing Spider-Man #300",
+            "image": "venom.webp"
+        },
+        {
+            "name": "Carnage",
+            "type": "Villain",
+            "universe": "Earth-616",
+            "powers": "Symbiote abilities, shape shifting, enhanced strength",
+            "firstAppearance": "Amazing Spider-Man #361",
+            "image": "carnage.webp"
+        },
+        {
+            "name": "Mysterio",
+            "type": "Villain",
+            "universe": "Earth-616",
+            "powers": "Illusions, special effects, technology",
+            "firstAppearance": "Amazing Spider-Man #13",
+            "image": "mysterio.webp"
+        }
+    ]
+}

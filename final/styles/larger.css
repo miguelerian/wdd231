@@ -1,0 +1,63 @@
+@media (min-width: 768px) {
+
+    #menu {
+        display: none;
+    }
+
+    header {
+        max-width: var(--max-width);
+        margin: auto;
+    }
+
+    .navigation {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .navigation li {
+        margin: 0;
+    }
+
+    /* ---------- Hero ---------- */
+
+    .hero {
+        position: relative;
+    }
+
+    /* ---------- Featured ---------- */
+
+    .featured {
+        grid-template-columns: 1fr 1fr;
+        gap: 0;
+    }
+
+    .featured-card {
+        padding: 1.5rem;
+    }
+
+    .featured-content {
+        grid-template-columns: 1fr 1.5fr;
+        gap: 1.5rem;
+    }
+
+    .featured-content img {
+        max-width: 180px;
+    }
+
+
+    /* ---------- Latest Characters ---------- */
+
+    .character-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+        .character-section {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+    
+        .character-grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+}

@@ -1,0 +1,389 @@
+/* Global Styles */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #C8102E;
+    --secondary: #0A1F44;
+    --background: #F5F5F5;
+    --surface: #FFFFFF;
+    --text: #222222;
+    --max-width: 1200px;
+
+    --heading-font: "Bebas Neue", sans-serif;
+    --body-font: "Roboto", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--body-font);
+    background: var(--background);
+    color: var(--text);
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+main {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* ---------- Header ---------- */
+
+header {
+    background: var(--secondary);
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+}
+
+.logo span {
+    font-family: var(--heading-font);
+    font-size: 2rem;
+}
+
+#menu {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "✕";
+}
+
+.navigation {
+    display: none;
+}
+
+.navigation.open {
+    display: block;
+}
+
+.navigation li {
+    margin: 1rem 0;
+}
+
+.navigation a {
+    color: white;
+    font-weight: 700;
+}
+
+.navigation a.active {
+    color: var(--primary);
+}
+
+/* ---------- Footer ---------- */
+
+footer {
+    background: var(--secondary);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer a {
+    color: white;
+}
+
+/* ---------- Hero ---------- */
+
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-button {
+    display: inline-block;
+    background: var(--primary);
+    color: white;
+
+    padding: .8rem 1.5rem;
+
+    border-radius: 6px;
+
+    font-weight: bold;
+
+    transition: background .3s ease;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+    background: #a30d24;
+}
+
+/* ---------- Welcome ---------- */
+
+.welcome {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: var(--surface);
+}
+
+.welcome h1 {
+    font-family: var(--heading-font);
+    color: var(--secondary);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.welcome p {
+    max-width: 700px;
+    margin: 0 auto 1.5rem;
+    line-height: 1.6;
+}
+
+/* ---------- Featured ---------- */
+
+.featured {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.featured-card {
+    background-color: var(--surface);
+    border: 1px solid #ddd;
+    padding: 1rem;
+}
+
+.featured-card h2 {
+    font-family: var(--heading-font);
+    color: var(--secondary);
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+.featured-content {
+    display: grid;
+    gap: 1rem;
+    align-items: center;
+}
+
+.featured-content img {
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+.featured-content h3 {
+    font-family: var(--heading-font);
+    color: var(--primary);
+    font-size: 1.8rem;
+    margin-top: 0;
+}
+
+.featured-content p {
+    line-height: 1.5;
+}
+
+.card-button {
+    display: inline-block;
+    background-color: var(--primary);
+    color: white;
+    padding: 0.7rem 1.2rem;
+    margin-top: 0.5rem;
+    font-weight: 700;
+    border-radius: 4px;
+}
+
+.card-button:hover,
+.card-button:focus {
+    background-color: #a30d24;
+}
+
+/* ---------- Latest Characters ---------- */
+
+.latest {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.latest h2 {
+    font-family: var(--heading-font);
+    color: var(--secondary);
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.character-grid {
+    display: grid;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.character-card {
+    background-color: var(--surface);
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    overflow: hidden;
+    text-align: left;
+}
+
+.character-card img {
+    width: 100%;
+    height: auto;
+}
+
+.character-info {
+    padding: 1rem;
+}
+
+.character-info h3 {
+    font-family: var(--heading-font);
+    color: var(--primary);
+    font-size: 1.7rem;
+    margin-top: 0;
+}
+
+.character-info p {
+    line-height: 1.5;
+}
+
+/* ---------- Page Header ---------- */
+
+.page-header {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: var(--surface);
+}
+
+.page-header h1 {
+    font-family: var(--heading-font);
+    color: var(--secondary);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.page-header p {
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+
+/* ---------- Character Section ---------- */
+
+.character-section {
+    padding: 2rem 1rem;
+}
+
+.character-section h2 {
+    text-align: center;
+    font-family: var(--heading-font);
+    color: var(--secondary);
+    font-size: 2.2rem;
+}
+
+
+/* ---------- Filter ---------- */
+
+.character-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    margin: 1.5rem 0;
+    flex-wrap: wrap;
+}
+
+.character-controls select {
+    padding: 0.6rem;
+    border: 1px solid #777;
+    border-radius: 4px;
+    background-color: white;
+}
+
+
+/* ---------- Dialog ---------- */
+
+dialog {
+    width: min(90%, 500px);
+    border: none;
+    border-radius: 8px;
+    padding: 0;
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.dialog-content {
+    position: relative;
+    padding: 2rem;
+}
+
+.dialog-content img {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 1rem auto;
+}
+
+.dialog-content h2 {
+    font-family: var(--heading-font);
+    color: var(--primary);
+    text-align: center;
+}
+
+.close-dialog {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.75rem;
+
+    border: none;
+    background: transparent;
+
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.close-dialog:focus {
+    outline: 2px solid var(--primary);
+}
