@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SpiderVerse Explorer | Submission</title>
+
+    <meta name="description" content="View your SpiderVerse Explorer favorite character submission.">
+
+    <meta name="author" content="Miguel Avalos">
+
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+
+            <img src="images/logo.webp" alt="SpiderVerse Explorer logo" width="60" height="60">
+
+            <span>SpiderVerse Explorer</span>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <section class="page-header">
+
+            <h1>Submission Received</h1>
+
+            <p>
+                Thank you for sharing your favorite character!
+            </p>
+
+        </section>
+
+
+        <section class="form-section">
+
+            <div id="submission">
+
+                <p>Loading your submission...</p>
+
+            </div>
+
+            <p>
+                <a href="characters.html">
+                    Return to Characters
+                </a>
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            &copy; <span id="year"></span> |
+            Miguel Avalos |
+            WDD231 Final Project
+        </p>
+
+    </footer>
+
+
+    <script>
+
+        const params = new URLSearchParams(
+            window.location.search
+        );
+
+        const name = params.get("name");
+        const favorite = params.get("favorite");
+        const message = params.get("message");
+
+        const submission =
+            document.querySelector("#submission");
+
+        if (name && favorite && message) {
+
+            submission.innerHTML = `
+                <p>
+                    <strong>Name:</strong> ${name}
+                </p>
+
+                <p>
+                    <strong>Favorite Character:</strong>
+                    ${favorite}
+                </p>
+
+                <p>
+                    <strong>Message:</strong>
+                    ${message}
+                </p>
+            `;
+
+        } else {
+
+            submission.innerHTML = `
+                <p>
+                    No submission information was found.
+                </p>
+            `;
+
+        }
+
+        document.querySelector("#year").textContent =
+            new Date().getFullYear();
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SpiderVerse Explorer | Favorite Character</title>
+
+    <meta name="description" content="Share your favorite Spider-Man character with SpiderVerse Explorer.">
+    <meta name="author" content="Miguel Avalos">
+
+    <meta property="og:title" content="SpiderVerse Explorer | Favorite Character">
+    <meta property="og:description" content="Share your favorite Spider-Man character.">
+    <meta property="og:image" content="images/hero-large.webp">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+
+            <img src="images/logo.webp" alt="SpiderVerse Explorer logo" width="60" height="60">
+
+            <span>SpiderVerse Explorer</span>
+
+        </div>
+
+        <button id="menu" aria-label="Open Navigation"></button>
+
+        <nav>
+
+            <ul class="navigation">
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="characters.html">Characters</a>
+                </li>
+
+                <li>
+                    <a href="villains.html">Villains</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="page-header">
+
+            <h1>Favorite Character</h1>
+
+            <p>
+                Tell us which Spider-Man character is your favorite.
+            </p>
+
+        </section>
+
+
+        <section class="form-section">
+
+            <form method="get" action="form-action.html">
+
+                <label for="name">
+                    Your Name
+                </label>
+
+                <input type="text" id="name" name="name" required autocomplete="name">
+
+
+                <label for="favorite">
+                    Favorite Character
+                </label>
+
+                <select id="favorite" name="favorite" required>
+
+                    <option value="" disabled selected>
+                        Select a character
+                    </option>
+
+                    <option value="Peter Parker">
+                        Peter Parker
+                    </option>
+
+                    <option value="Miles Morales">
+                        Miles Morales
+                    </option>
+
+                    <option value="Gwen Stacy">
+                        Gwen Stacy
+                    </option>
+
+                    <option value="Miguel O'Hara">
+                        Miguel O'Hara
+                    </option>
+
+                    <option value="Spider-Man Noir">
+                        Spider-Man Noir
+                    </option>
+
+                    <option value="Spider-Ham">
+                        Spider-Ham
+                    </option>
+
+                    <option value="Pavitr Prabhakar">
+                        Pavitr Prabhakar
+                    </option>
+
+                    <option value="Jessica Drew">
+                        Jessica Drew
+                    </option>
+
+                    <option value="Ben Reilly">
+                        Ben Reilly
+                    </option>
+
+                    <option value="Cindy Moon">
+                        Cindy Moon
+                    </option>
+
+                </select>
+
+
+                <label for="message">
+                    Why is this character your favorite?
+                </label>
+
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+
+                <button type="submit">
+                    Submit
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            &copy; <span id="year"></span> |
+            Miguel Avalos |
+            WDD231 Final Project
+        </p>
+
+        <p>
+            <a href="form.html">Favorite Character</a> |
+            <a href="attributions.html">Attributions</a>
+        </p>
+
+    </footer>
+
+    <script src="scripts/navigation.js" defer></script>
+
+</body>
+
+</html>

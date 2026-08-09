@@ -8,8 +8,12 @@ const dialog = document.querySelector("#character-dialog");
 const dialogContent = document.querySelector("#dialog-content");
 const closeDialog = document.querySelector("#close-dialog");
 
+const favoriteMessage = document.querySelector("#favorite-message");
+
 let characters = [];
 
+
+/* ---------- Load Characters ---------- */
 
 async function loadCharacters() {
 
@@ -20,6 +24,8 @@ async function loadCharacters() {
     addCardEvents();
 }
 
+
+/* ---------- Card Events ---------- */
 
 function addCardEvents() {
 
@@ -39,8 +45,26 @@ function addCardEvents() {
 
     });
 
+
+    const favoriteButtons =
+        document.querySelectorAll(".favorite-button");
+
+    favoriteButtons.forEach((button) => {
+
+        button.addEventListener("click", (event) => {
+
+            event.stopPropagation();
+
+            saveFavorite(button.dataset.name);
+
+        });
+
+    });
+
 }
 
+
+/* ---------- Modal ---------- */
 
 function showCharacter(character) {
 
@@ -59,7 +83,8 @@ function showCharacter(character) {
 
         <p><strong>Powers:</strong> ${character.powers}</p>
 
-        <p><strong>First Appearance:</strong>
+        <p>
+            <strong>First Appearance:</strong>
             ${character.firstAppearance}
         </p>
     `;
@@ -67,6 +92,8 @@ function showCharacter(character) {
     dialog.showModal();
 }
 
+
+/* ---------- Filter ---------- */
 
 filter.addEventListener("change", () => {
 
@@ -90,6 +117,41 @@ filter.addEventListener("change", () => {
 });
 
 
+/* ---------- Local Storage ---------- */
+
+function saveFavorite(name) {
+
+    localStorage.setItem("favoriteCharacter", name);
+
+    showFavorite(name);
+
+}
+
+
+function showFavorite(name) {
+
+    favoriteMessage.textContent =
+        `Your favorite character is ${name}.`;
+
+}
+
+
+function loadFavorite() {
+
+    const savedFavorite =
+        localStorage.getItem("favoriteCharacter");
+
+    if (savedFavorite) {
+
+        showFavorite(savedFavorite);
+
+    }
+
+}
+
+
+/* ---------- Close Modal ---------- */
+
 closeDialog.addEventListener("click", () => {
 
     dialog.close();
@@ -100,10 +162,15 @@ closeDialog.addEventListener("click", () => {
 dialog.addEventListener("click", (event) => {
 
     if (event.target === dialog) {
+
         dialog.close();
+
     }
 
 });
 
 
+/* ---------- Start Page ---------- */
+
+loadFavorite();
 loadCharacters();

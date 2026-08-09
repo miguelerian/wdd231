@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SpiderVerse Explorer | Villains</title>
+
+    <meta name="description"
+        content="Explore famous Spider-Man villains, their universes, abilities, and first appearances.">
+    <meta name="author" content="Miguel Avalos">
+
+    <meta property="og:title" content="SpiderVerse Explorer | Villains">
+    <meta property="og:description" content="Discover villains from across the Spider-Verse.">
+    <meta property="og:image" content="images/hero-large.webp">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script type="module" src="scripts/villains.js"></script>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            <img src="images/logo.webp" alt="SpiderVerse Explorer logo" width="60" height="60">
+
+            <span>SpiderVerse Explorer</span>
+        </div>
+
+        <button id="menu" aria-label="Open Navigation"></button>
+
+        <nav>
+            <ul class="navigation">
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="characters.html">Characters</a>
+                </li>
+
+                <li>
+                    <a href="villains.html" class="active">Villains</a>
+                </li>
+
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="page-header">
+
+            <h1>Spider-Man Villains</h1>
+
+            <p>
+                Explore some of the most famous villains from
+                across the Spider-Verse.
+            </p>
+
+        </section>
+
+
+        <section class="character-section">
+
+            <h2>Villain Collection</h2>
+
+            <div id="villains" class="character-grid">
+                <!-- JavaScript generates the villain cards -->
+            </div>
+
+        </section>
+
+
+        <dialog id="character-dialog">
+
+            <div class="dialog-content">
+
+                <button id="close-dialog" class="close-dialog" aria-label="Close villain details">
+                    &times;
+                </button>
+
+                <div id="dialog-content">
+                    <!-- JavaScript inserts villain details -->
+                </div>
+
+            </div>
+
+        </dialog>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            &copy; <span id="year"></span> |
+            Miguel Avalos |
+            WDD231 Final Project
+        </p>
+
+        <p>
+            <a href="form.html">Favorite Character</a> |
+            <a href="attributions.html">Attributions</a>
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

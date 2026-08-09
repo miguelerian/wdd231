@@ -29,10 +29,18 @@ export function displayCharacters(characters, container) {
 
                 <p><strong>Powers:</strong> ${character.powers}</p>
 
+                <button
+                    class="favorite-button"
+                    type="button"
+                    data-name="${character.name}">
+                    Save as Favorite
+                </button>
+
             </div>
         `;
 
         container.appendChild(card);
 
     });
+
 }
