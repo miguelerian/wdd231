@@ -51,6 +51,7 @@ main {
     padding: 1rem;
 }
 
+
 /* ---------- Header ---------- */
 
 header {
@@ -108,9 +109,13 @@ header {
     font-weight: 700;
 }
 
+/* Updated for WCAG AA contrast */
 .navigation a.active {
-    color: var(--primary);
+    color: white;
+    text-decoration: underline;
+    text-underline-offset: 4px;
 }
+
 
 /* ---------- Footer ---------- */
 
@@ -124,6 +129,7 @@ footer {
 footer a {
     color: white;
 }
+
 
 /* ---------- Hero ---------- */
 
@@ -156,6 +162,7 @@ footer a {
     background: #a30d24;
 }
 
+
 /* ---------- Welcome ---------- */
 
 .welcome {
@@ -176,6 +183,7 @@ footer a {
     margin: 0 auto 1.5rem;
     line-height: 1.6;
 }
+
 
 /* ---------- Featured ---------- */
 
@@ -237,6 +245,7 @@ footer a {
     background-color: #a30d24;
 }
 
+
 /* ---------- Latest Characters ---------- */
 
 .latest {
@@ -284,6 +293,7 @@ footer a {
 .character-info p {
     line-height: 1.5;
 }
+
 
 /* ---------- Page Header ---------- */
 
@@ -388,6 +398,7 @@ dialog::backdrop {
     outline: 2px solid var(--primary);
 }
 
+
 /* ---------- Favorite ---------- */
 
 .favorite-section {
@@ -420,6 +431,7 @@ dialog::backdrop {
 .favorite-button:focus {
     background-color: var(--primary);
 }
+
 
 /* ---------- Form ---------- */
 
