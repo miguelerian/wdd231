@@ -1,161 +1,180 @@
-<title>SpiderVerse Explorer | Home</title>
+<!DOCTYPE html>
+<html lang="en">
 
-<meta name="description" content="Explore Spider-Man characters, universes, and villains from across the Spider-Verse.">
-<meta name="author" content="Miguel Avalos">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Open Graph -->
-<meta property="og:title" content="SpiderVerse Explorer">
-<meta property="og:description" content="Discover Spider-Man characters and villains from the Spider-Verse.">
-<meta property="og:image" content="images/hero-large.webp">
-<meta property="og:type" content="website">
+    <title>SpiderVerse Explorer | Home</title>
 
-<link rel="icon" href="favicon.ico">
+    <meta name="description"
+        content="Explore Spider-Man characters, universes, and villains from across the Spider-Verse.">
+    <meta name="author" content="Miguel Avalos">
 
-<!-- Google Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Open Graph -->
+    <meta property="og:title" content="SpiderVerse Explorer">
+    <meta property="og:description" content="Discover Spider-Man characters and villains from the Spider-Verse.">
+    <meta property="og:image" content="images/hero-large.webp">
+    <meta property="og:type" content="website">
 
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;700&display=swap"
-    rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
 
-<link rel="stylesheet" href="styles/normalize.css">
-<link rel="stylesheet" href="styles/base.css">
-<link rel="stylesheet" href="styles/larger.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<script type="module" src="scripts/main.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
 
-<header>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
 
-    <div class="logo">
-        <img src="images/logo.webp" alt="SpiderVerse Explorer logo" width="60" height="60">
-        <span>SpiderVerse Explorer</span>
-    </div>
+    <script type="module" src="scripts/main.js"></script>
+</head>
 
-    <button id="menu" aria-label="Open Navigation"></button>
+<body>
 
-    <nav>
+    <header>
 
-        <ul class="navigation">
-
-            <li><a href="index.html" class="active">Home</a></li>
-
-            <li><a href="characters.html">Characters</a></li>
-
-            <li><a href="villains.html">Villains</a></li>
-
-        </ul>
-
-    </nav>
-
-</header>
-
-<section class="hero">
-
-    <picture>
-        <source srcset="images/hero-large.webp" media="(min-width: 768px)">
-
-        <img src="images/hero-small.webp" alt="Spider-Man characters from across the Spider-Verse" width="1200"
-            height="600" loading="eager">
-    </picture>
-
-</section>
-
-
-<section class="welcome">
-
-    <h1>Welcome to the SpiderVerse</h1>
-
-    <p>
-        Explore characters, universes, powers, and villains
-        from across the Spider-Verse.
-    </p>
-
-    <a class="hero-button" href="characters.html">
-        Explore Now
-    </a>
-
-</section>
-
-<section class="featured">
-
-    <article class="featured-card">
-
-        <h2>Featured Spider-Man</h2>
-
-        <div class="featured-content">
-
-            <img src="images/peter.webp" alt="Peter Parker as Spider-Man" width="300" height="300" loading="lazy">
-
-            <div>
-                <h3>Peter Parker</h3>
-
-                <p><strong>Universe:</strong> Earth-616</p>
-
-                <p><strong>Powers:</strong> Spider-Sense, wall crawling, super strength</p>
-
-                <a class="card-button" href="characters.html">
-                    View Details
-                </a>
-            </div>
-
+        <div class="logo">
+            <img src="images/logo.webp" alt="SpiderVerse Explorer logo" width="60" height="60">
+            <span>SpiderVerse Explorer</span>
         </div>
 
-    </article>
+        <button id="menu" aria-label="Open Navigation"></button>
+
+        <nav>
+
+            <ul class="navigation">
+
+                <li><a href="index.html" class="active">Home</a></li>
+
+                <li><a href="characters.html">Characters</a></li>
+
+                <li><a href="villains.html">Villains</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="hero">
+
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 768px)">
+
+                <img src="images/hero-small.webp" alt="Spider-Man characters from across the Spider-Verse" width="1200"
+                    height="600" loading="eager">
+            </picture>
+
+        </section>
 
 
-    <article class="featured-card">
+        <section class="welcome">
 
-        <h2>Featured Villain</h2>
+            <h1>Welcome to the SpiderVerse</h1>
 
-        <div class="featured-content">
+            <p>
+                Explore characters, universes, powers, and villains
+                from across the Spider-Verse.
+            </p>
 
-            <img src="images/goblin.webp" alt="Green Goblin" width="300" height="300" loading="lazy">
+            <a class="hero-button" href="characters.html">
+                Explore Now
+            </a>
 
-            <div>
-                <h3>Green Goblin</h3>
+        </section>
 
-                <p><strong>Universe:</strong> Earth-616</p>
+        <section class="featured">
 
-                <p><strong>Abilities:</strong> Enhanced strength, agility, and technology</p>
+            <article class="featured-card">
 
-                <a class="card-button" href="villains.html">
-                    View Details
-                </a>
+                <h2>Featured Spider-Man</h2>
+
+                <div class="featured-content">
+
+                    <img src="images/peter.webp" alt="Peter Parker as Spider-Man" width="300" height="300"
+                        loading="lazy">
+
+                    <div>
+                        <h3>Peter Parker</h3>
+
+                        <p><strong>Universe:</strong> Earth-616</p>
+
+                        <p><strong>Powers:</strong> Spider-Sense, wall crawling, super strength</p>
+
+                        <a class="card-button" href="characters.html">
+                            View Details
+                        </a>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <article class="featured-card">
+
+                <h2>Featured Villain</h2>
+
+                <div class="featured-content">
+
+                    <img src="images/goblin.webp" alt="Green Goblin" width="300" height="300" loading="lazy">
+
+                    <div>
+                        <h3>Green Goblin</h3>
+
+                        <p><strong>Universe:</strong> Earth-616</p>
+
+                        <p><strong>Abilities:</strong> Enhanced strength, agility, and technology</p>
+
+                        <a class="card-button" href="villains.html">
+                            View Details
+                        </a>
+                    </div>
+
+                </div>
+
+            </article>
+
+        </section>
+
+        <section class="latest">
+
+            <h2>Latest Characters</h2>
+
+            <div id="latest-characters" class="character-grid">
+                <!-- JavaScript will generate the cards here -->
             </div>
 
-        </div>
+            <a class="card-button" href="characters.html">
+                View All Characters
+            </a>
 
-    </article>
+        </section>
 
-</section>
+    </main>
 
-<section class="latest">
+    <footer>
 
-    <h2>Latest Characters</h2>
+        <p>&copy; <span id="year"></span> | Miguel Avalos | WDD231 Final Project</p>
 
-    <div id="latest-characters" class="character-grid">
-        <!-- JavaScript will generate the cards here -->
-    </div>
+        <p>
+            <a href="form.html">Favorite Character</a> |
+            <a href="attributions.html">Attributions</a>
+        </p>
 
-    <a class="card-button" href="characters.html">
-        View All Characters
-    </a>
+        <p>
+            <a href="YOUR_VIDEO_LINK" target="_blank" rel="noopener">
+                <a href="video_link" target="_blank" rel="noopener">
+                    Project Demonstration Video
+                </a>
+        </p>
 
-</section>
+    </footer>
 
-<footer>
-
-    <p>&copy; <span id="year"></span> | Miguel Avalos | WDD231 Final Project</p>
-
-    <p>
-        <a href="form.html">Favorite Character</a> |
-        <a href="attributions.html">Attributions</a>
-    </p>
-
-    <p>
-        <a href="video_link" target="_blank" rel="noopener">
-            Project Demonstration Video
-        </a>
-    </p>
-
-</footer>
+</body>
