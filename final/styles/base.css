@@ -57,12 +57,11 @@ main {
 header {
     background: var(--secondary);
     color: white;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     padding: 1rem;
+    position: relative;
 }
 
 .logo {
@@ -75,6 +74,7 @@ header {
     font-family: var(--heading-font);
     font-size: 2rem;
 }
+
 #menu {
     background: none;
     border: none;
@@ -101,6 +101,8 @@ header {
 
 .navigation.open {
     display: block;
+    padding: 1rem;
+    text-align: center;
 }
 
 .navigation li {
@@ -119,17 +121,8 @@ header {
     text-underline-offset: 4px;
 }
 
-header {
-    position: relative;
-}
-
 nav {
     width: auto;
-}
-
-.navigation.open {
-    padding: 1rem;
-    text-align: center;
 }
 
 
