@@ -1,5 +1,6 @@
 import { getCharacters } from "./data.js";
 import { displayCharacters } from "./cards.js";
+import "./navigation.js";
 
 const latestCharacters = document.querySelector("#latest-characters");
 

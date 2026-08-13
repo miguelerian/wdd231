@@ -75,13 +75,13 @@ header {
     font-family: var(--heading-font);
     font-size: 2rem;
 }
-
 #menu {
     background: none;
     border: none;
     color: white;
     font-size: 2rem;
     cursor: pointer;
+    flex-shrink: 0;
 }
 
 #menu::before {
@@ -124,7 +124,7 @@ header {
 }
 
 nav {
-    width: 100%;
+    width: auto;
 }
 
 .navigation.open {
